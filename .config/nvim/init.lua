@@ -19,3 +19,11 @@ vim.cmd.colorscheme('catppuccin')
 vim.pack.add({
     { src = "https://github.com/catppuccin/nvim", name = "catppuccin" }
 })
+
+-- Tree sitter
+vim.treesitter.language.add('python', { path = "/usr/lib64/libtree-sitter-python.so.15" })
+vim.treesitter.language.add('javascript', { path = "/usr/lib64/libtree-sitter-javascript.so.15" })
+vim.treesitter.language.add('php', { path = "/usr/lib64/libtree-sitter-php.so.15" })
+vim.treesitter.language.add('json', { path = "/usr/lib64/libtree-sitter-json.so.14" })
+vim.treesitter.language.add('typescript', { path = "/usr/lib64/libtree-sitter-typescript.so.14" })
+
